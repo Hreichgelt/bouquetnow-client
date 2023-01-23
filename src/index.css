@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  --yellow: rgb(246, 189, 96);
+  --offwhite: rgb(247, 237, 226);
+  --lightpink: rgb(245, 202, 195);
+  --pink: rgb(242, 132, 130);
+  --red: rgb(188, 44, 26);
+  --black: rgb(25, 23, 22);
+}
+
+body {
+  background-color:  rgb(247, 237, 226);
+}
+
+h1, h2, a {
+  color: rgb(242, 132, 130);
+}
+
+#wholePageContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--pink);
+  color: var(--black);
+  border-radius: 4px;
+  padding: 12px 24px;
+  margin: 16px;
+  border: none;
+  font-weight: bold;
+  filter: drop-shadow(.1rem .1rem .1rem rgb(217, 110, 108));
+}
+
+button:hover {
+  padding: 11px 21px 9px 23px;
+  border-bottom: 3px solid rgb(217, 110, 108);
+  border-right: 3px solid rgb(217, 110, 108);
+  border-left: 1px solid rgb(217, 110, 108);
+  border-top: 1px solid rgb(217, 110, 108);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(245, 202, 195);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(242, 132, 130);
+  border-left: 2px solid rgb(217, 110, 108);
+  border-top: 2px solid rgb(217, 110, 108);
+  border-bottom: 2px solid rgb(217, 110, 108);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(246, 189, 96);
+  border-left: 2px solid rgb(218, 154, 51);
+  border-top: 2px solid rgb(218, 154, 51);
+  border-bottom: 2px solid rgb(218, 154, 51);
+}

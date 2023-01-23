@@ -1,0 +1,51 @@
+#signup-main {
+  --yellow: rgb(246, 189, 96);
+  --offwhite: rgb(247, 237, 226);
+  --lightpink: rgb(245, 202, 195);
+  --pink: rgb(242, 132, 130);
+  --red: rgb(188, 44, 26);
+  --black: rgb(25, 23, 22);
+}
+
+#signup-main {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#signup-main h2 {
+  color: var(--pink);
+}
+
+#signup-form {
+  padding-top: 1rem;
+  border: solid 4px var(--pink);
+  border-radius: 8px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+#signup-form input {
+  background-color: var(--lightpink);
+  margin: 16px;
+  color: var(--black);
+  border: none;
+  padding: 8px 16px;
+  width: 50%;
+  font-size: large;
+}
+
+#signup-form input::placeholder{
+  color: var(--black);
+}
+
+/* When the screen's width reaches 1040 or lower,*/
+@media screen and (max-width: 1040px){
+  #signup-form input {
+    width: 75%;
+  }
+}
+

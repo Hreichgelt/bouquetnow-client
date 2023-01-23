@@ -1,0 +1,64 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid rgb(25, 23, 22);
+}
+
+.productQty {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 4px;
+  padding: 4px;
+}
+
+.productQty input[type="number"] {
+  border: none;
+  text-align: center;
+  filter: drop-shadow(.1rem .1rem .1rem rgb(217, 110, 108));
+}
+
+.productQty input[type="number"]:active {
+  border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
+.qtyLabel {
+  margin: 8px;
+  font-weight: 500;
+  display: flex-start;
+}
+
+.cartItemTitle {
+  font-weight: 600;
+}
+
+.deleteBtn {
+  padding: 6px 10px;
+  margin: 4px;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  padding: 4px 8px;
+  margin: 4px;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.cartItemPrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 500;
+  margin-right: 1rem;
+}
